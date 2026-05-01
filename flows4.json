@@ -1,1 +1,2413 @@
-[]
+[
+    {
+        "id": "7cb073363331ce02",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1899ad506aec9742",
+        "type": "subflow",
+        "name": "Framing Tool",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [
+            {
+                "name": "group",
+                "type": "ui-page",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-sitemap",
+                    "label": {
+                        "en-US": "Group"
+                    },
+                    "type": "conf-types"
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#FFAAAA",
+        "icon": "font-awesome/fa-object-group"
+    },
+    {
+        "id": "1b607c4bf53459a4",
+        "type": "subflow",
+        "name": "Button",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 680,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "d81c5188f589b9d7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "group",
+                "type": "ui-page",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-sitemap",
+                    "label": {
+                        "en-US": "Group"
+                    },
+                    "type": "conf-types"
+                }
+            },
+            {
+                "name": "label",
+                "type": "str",
+                "value": "Button",
+                "ui": {
+                    "icon": "font-awesome/fa-align-justify",
+                    "label": {
+                        "en-US": "Label"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "payloadOut",
+                "type": "str",
+                "value": "Button Message",
+                "ui": {
+                    "icon": "font-awesome/fa-file-text-o",
+                    "label": {
+                        "en-US": "Message"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "left",
+                "type": "str",
+                "value": "500",
+                "ui": {
+                    "icon": "font-awesome/fa-location-arrow",
+                    "label": {
+                        "en-US": "x"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "top",
+                "type": "str",
+                "value": "300",
+                "ui": {
+                    "icon": "font-awesome/fa-location-arrow",
+                    "label": {
+                        "en-US": "y"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "width",
+                "type": "str",
+                "value": "180",
+                "ui": {
+                    "icon": "font-awesome/fa-text-width",
+                    "label": {
+                        "en-US": "Width"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "height",
+                "type": "str",
+                "value": "60",
+                "ui": {
+                    "icon": "font-awesome/fa-text-height",
+                    "label": {
+                        "en-US": "Height"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "fontSize",
+                "type": "str",
+                "value": "14"
+            },
+            {
+                "name": "fontFamily",
+                "type": "str",
+                "value": "Arial, sans-serif",
+                "ui": {
+                    "label": {
+                        "en-US": "Font"
+                    },
+                    "type": "select",
+                    "opts": {
+                        "opts": [
+                            {
+                                "l": {
+                                    "en-US": "Arial, sans-serif"
+                                },
+                                "v": "Arial, sans-serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Helvetica, sans-serif"
+                                },
+                                "v": "Helvetica, sans-serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Comic Sans MS, cursive"
+                                },
+                                "v": "Comic Sans MS, cursive"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Times New Roman, serif"
+                                },
+                                "v": "Times New Roman, serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Georgia, serif"
+                                },
+                                "v": "Georgia, serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Courier New, monospace"
+                                },
+                                "v": "Courier New, monospace"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Monaco, monospace"
+                                },
+                                "v": "Monaco, monospace"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Menlo, monospace"
+                                },
+                                "v": "Menlo, monospace"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Times New Roman, serif"
+                                },
+                                "v": "Times New Roman, serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Roboto, sans-serif"
+                                },
+                                "v": "Roboto, sans-serif"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "textColor",
+                "type": "str",
+                "value": "white",
+                "ui": {
+                    "icon": "font-awesome/fa-header",
+                    "label": {
+                        "en-US": "Text Color"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "textAlign",
+                "type": "str",
+                "value": "center"
+            },
+            {
+                "name": "color",
+                "type": "str",
+                "value": "black",
+                "ui": {
+                    "icon": "font-awesome/fa-h-square",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "pressedColor",
+                "type": "str",
+                "value": "darkgrey",
+                "ui": {
+                    "icon": "font-awesome/fa-h-square",
+                    "label": {
+                        "en-US": "Pressed Color"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "border",
+                "type": "str",
+                "value": "1px solid white",
+                "ui": {
+                    "icon": "font-awesome/fa-window-maximize",
+                    "label": {
+                        "en-US": "Border"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "borderRadius",
+                "type": "str",
+                "value": "6",
+                "ui": {
+                    "icon": "font-awesome/fa-circle-o",
+                    "label": {
+                        "en-US": "Corner Radius"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "fontWeight",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-bold",
+                    "label": {
+                        "en-US": "Font Weight"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "alignItems",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "wrapText",
+                "type": "str",
+                "value": "1"
+            },
+            {
+                "name": "pressDelay",
+                "type": "str",
+                "value": "200",
+                "ui": {
+                    "icon": "font-awesome/fa-clock-o",
+                    "label": {
+                        "en-US": "Pressed Time"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#87A980",
+        "icon": "node-red/mouse.svg"
+    },
+    {
+        "id": "dae6a1e29997b60c",
+        "type": "subflow",
+        "name": "Send Laser Command",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "d21b3b05416b2dbe"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 620,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "954d6c16eaeafd41",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d7b551338cde4df2",
+        "type": "subflow",
+        "name": "Text Entry",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 680,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "9ffa3b5817ef57e5",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "group",
+                "type": "ui-page",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-sitemap",
+                    "label": {
+                        "en-US": "Group"
+                    },
+                    "type": "conf-types"
+                }
+            },
+            {
+                "name": "title",
+                "type": "str",
+                "value": "Command",
+                "ui": {
+                    "icon": "font-awesome/fa-align-justify",
+                    "label": {
+                        "en-US": "Title"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "commandPrefix",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-space-shuttle",
+                    "label": {
+                        "en-US": "Command"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "defaultValue",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "palceholder",
+                "type": "str",
+                "value": "\"Enter Value\"",
+                "ui": {
+                    "icon": "font-awesome/fa-file-text-o",
+                    "label": {
+                        "en-US": "Placeholder"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "left",
+                "type": "str",
+                "value": "500",
+                "ui": {
+                    "icon": "font-awesome/fa-location-arrow",
+                    "label": {
+                        "en-US": "x"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "top",
+                "type": "str",
+                "value": "300",
+                "ui": {
+                    "icon": "font-awesome/fa-location-arrow",
+                    "label": {
+                        "en-US": "y"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "width",
+                "type": "str",
+                "value": "180",
+                "ui": {
+                    "icon": "font-awesome/fa-text-width",
+                    "label": {
+                        "en-US": "Width"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "height",
+                "type": "str",
+                "value": "60",
+                "ui": {
+                    "icon": "font-awesome/fa-text-height",
+                    "label": {
+                        "en-US": "Height"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "titleColor",
+                "type": "str",
+                "value": "red",
+                "ui": {
+                    "icon": "font-awesome/fa-header",
+                    "label": {
+                        "en-US": "Title Color"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "textColor",
+                "type": "str",
+                "value": "red"
+            },
+            {
+                "name": "backgroundColor",
+                "type": "str",
+                "value": "white",
+                "ui": {
+                    "icon": "font-awesome/fa-h-square",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "borderRadius",
+                "type": "str",
+                "value": "6",
+                "ui": {
+                    "icon": "font-awesome/fa-circle-o",
+                    "label": {
+                        "en-US": "Corner Radius"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "border",
+                "type": "str",
+                "value": "1px solid black",
+                "ui": {
+                    "icon": "font-awesome/fa-window-maximize",
+                    "label": {
+                        "en-US": "Border"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "padding",
+                "type": "str",
+                "value": "0 10px"
+            },
+            {
+                "name": "textAlign",
+                "type": "str",
+                "value": "left"
+            },
+            {
+                "name": "fontFamily",
+                "type": "str",
+                "value": "Arial, sans-serif",
+                "ui": {
+                    "label": {
+                        "en-US": "Font"
+                    },
+                    "type": "select",
+                    "opts": {
+                        "opts": [
+                            {
+                                "l": {
+                                    "en-US": "Arial, sans-serif"
+                                },
+                                "v": "Arial, sans-serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Helvetica, sans-serif"
+                                },
+                                "v": "Helvetica, sans-serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Comic Sans MS, cursive"
+                                },
+                                "v": "Comic Sans MS, cursive"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Times New Roman, serif"
+                                },
+                                "v": "Times New Roman, serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Georgia, serif"
+                                },
+                                "v": "Georgia, serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Courier New, monospace"
+                                },
+                                "v": "Courier New, monospace"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Monaco, monospace"
+                                },
+                                "v": "Monaco, monospace"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Menlo, monospace"
+                                },
+                                "v": "Menlo, monospace"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Times New Roman, serif"
+                                },
+                                "v": "Times New Roman, serif"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "Roboto, sans-serif"
+                                },
+                                "v": "Roboto, sans-serif"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "fontSize",
+                "type": "str",
+                "value": "14",
+                "ui": {
+                    "icon": "font-awesome/fa-text-height",
+                    "label": {
+                        "en-US": "Font Size"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "fontWeight",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-bold",
+                    "label": {
+                        "en-US": "Font Weight"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "titleAlign",
+                "type": "str",
+                "value": "center"
+            },
+            {
+                "name": "titleFontSize",
+                "type": "str",
+                "value": "14"
+            },
+            {
+                "name": "titleFontWeight",
+                "type": "str",
+                "value": "bold"
+            },
+            {
+                "name": "titleSpacing",
+                "type": "str",
+                "value": "4"
+            }
+        ],
+        "meta": {},
+        "color": "#87A980",
+        "icon": "node-red/mouse.svg"
+    },
+    {
+        "id": "24ed30c88c9eb3c0",
+        "type": "subflow",
+        "name": "Page 1",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "b17e4a2898565cbd",
+        "type": "subflow",
+        "name": "Page 2",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [
+            {
+                "name": "ManagementButtonWidth",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-text-width",
+                    "label": {
+                        "en-US": "Management Button Width"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "num",
+                            "bool",
+                            "json",
+                            "bin",
+                            "env",
+                            "conf-types"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "ButtonWidth",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "icon": "font-awesome/fa-text-width",
+                    "label": {
+                        "en-US": "Button Width"
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7a06fecc7a08f48e",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "07a31aa80b35fee7",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#3f93cd",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "c092c317c10b94cb",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "7a06fecc7a08f48e",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "07a31aa80b35fee7",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d04147ed38ac8e22",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "c092c317c10b94cb",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "70dfd61515e45c2a",
+        "type": "ui-page",
+        "name": "Page 2",
+        "ui": "7a06fecc7a08f48e",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "07a31aa80b35fee7",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "382499064ae6a651",
+        "type": "ui-group",
+        "name": "Power Group",
+        "page": "70dfd61515e45c2a",
+        "width": "2",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "944874ad79f6f171",
+        "type": "ui-group",
+        "name": "PostFlow Group",
+        "page": "70dfd61515e45c2a",
+        "width": "2",
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c955c2cb9c8a9507",
+        "type": "ui-group",
+        "name": "PreFlow Group",
+        "page": "70dfd61515e45c2a",
+        "width": "2",
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3d1a29e6660502a3",
+        "type": "ui-group",
+        "name": "Save Group",
+        "page": "70dfd61515e45c2a",
+        "width": "17",
+        "height": 1,
+        "order": 7,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "48b6f465d07617e4",
+        "type": "ui-group",
+        "name": "Program Num Group",
+        "page": "70dfd61515e45c2a",
+        "width": "2",
+        "height": 1,
+        "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "93a3c39755b421d4",
+        "type": "ui-group",
+        "name": "Management Group",
+        "page": "70dfd61515e45c2a",
+        "width": "4",
+        "height": 1,
+        "order": 5,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "70f9feebd4781be7",
+        "type": "ui-group",
+        "name": "Laser Mode",
+        "page": "70dfd61515e45c2a",
+        "width": "2",
+        "height": 1,
+        "order": 6,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8b9f9a8cb90a7211",
+        "type": "ui-template",
+        "z": "1899ad506aec9742",
+        "group": "",
+        "page": "${group}",
+        "ui": "",
+        "name": "Guide",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div style=\"position: absolute; top: 0; left: 0; width: 100vw; height: 100vh;\">\n\n    <!-- Box -->\n    <div\n      ref=\"marker\"\n      @mousedown=\"startDrag($event)\"\n      @touchstart.prevent=\"startDrag($event)\"\n      :style=\"boxStyle\"\n    >\n      <div\n        @mousedown.stop.prevent=\"startResize($event)\"\n        @touchstart.stop.prevent=\"startResize($event)\"\n        :style=\"resizeHandleStyle\"\n      ></div>\n    </div>\n\n    <!-- Readout and All Sliders -->\n    <div\n      ref=\"readout\"\n      @mousedown=\"startReadoutDrag($event)\"\n      @touchstart.prevent=\"startReadoutDrag($event)\"\n      :style=\"readoutStyle\"\n    >\n      <div style=\"font-family: monospace; font-size: 14px; margin-bottom: 6px;\">\n        X: {{ boxX }}<br>\n        Y: {{ boxY }}<br>\n        W: {{ boxW }}<br>\n        H: {{ boxH }}\n      </div>\n\n      <!-- Position Sliders -->\n      <div style=\"display: flex; align-items: center; margin-bottom: 6px;\" @mousedown.stop @touchstart.stop>\n        <label style=\"margin-right: 6px;\">← →</label>\n        <input type=\"range\" min=\"-10\" max=\"10\" step=\"1\" v-model.number=\"horizontal\"\n          @input=\"adjustHorizontal\" @change=\"resetSlider('horizontal')\"\n          style=\"width: 220px;\" />\n      </div>\n\n      <div style=\"display: flex; align-items: center; margin-bottom: 6px;\" @mousedown.stop @touchstart.stop>\n        <label style=\"margin-right: 6px;\">↓ ↑</label>\n        <input type=\"range\" min=\"-10\" max=\"10\" step=\"1\" v-model.number=\"vertical\"\n          @input=\"adjustVertical\" @change=\"resetSlider('vertical')\"\n          style=\"width: 220px;\" />\n      </div>\n\n      <!-- Size Sliders -->\n      <div style=\"display: flex; align-items: center; margin-bottom: 6px;\" @mousedown.stop @touchstart.stop>\n        <label style=\"margin-right: 6px;\">↔ W</label>\n        <input type=\"range\" min=\"-10\" max=\"10\" step=\"1\" v-model.number=\"widthDelta\"\n          @input=\"adjustWidth\" @change=\"resetSlider('widthDelta')\"\n          style=\"width: 220px;\" />\n      </div>\n\n      <div style=\"display: flex; align-items: center;\" @mousedown.stop @touchstart.stop>\n        <label style=\"margin-right: 6px;\">↕ H</label>\n        <input type=\"range\" min=\"-10\" max=\"10\" step=\"1\" v-model.number=\"heightDelta\"\n          @input=\"adjustHeight\" @change=\"resetSlider('heightDelta')\"\n          style=\"width: 220px;\" />\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      boxX: 300,\n      boxY: 300,\n      boxW: 60,\n      boxH: 60,\n      readoutX: 20,\n      readoutY: 20,\n      draggingBox: false,\n      draggingReadout: false,\n      resizing: false,\n      offsetX: 0,\n      offsetY: 0,\n      startW: 0,\n      startH: 0,\n      startMouseX: 0,\n      startMouseY: 0,\n      horizontal: 0,\n      vertical: 0,\n      lastHorizontal: 0,\n      lastVertical: 0,\n      widthDelta: 0,\n      heightDelta: 0,\n      lastWidthDelta: 0,\n      lastHeightDelta: 0\n    };\n  },\n  computed: {\n    boxStyle() {\n      return {\n        position: \"absolute\",\n        top: this.boxY + \"px\",\n        left: this.boxX + \"px\",\n        width: this.boxW + \"px\",\n        height: this.boxH + \"px\",\n        backgroundColor: \"rgba(0, 0, 0, 0.6)\",\n        border: \"1px solid black\",\n        borderRadius: \"0px\",\n        cursor: this.resizing ? \"nwse-resize\" : \"move\",\n        zIndex: 1000\n      };\n    },\n    resizeHandleStyle() {\n      return {\n        position: \"absolute\",\n        bottom: \"-6px\",\n        right: \"-6px\",\n        width: \"12px\",\n        height: \"12px\",\n        backgroundColor: \"white\",\n        border: \"2px solid black\",\n        borderRadius: \"50%\",\n        cursor: \"nwse-resize\",\n        zIndex: 1001\n      };\n    },\n    readoutStyle() {\n      return {\n        position: \"absolute\",\n        top: this.readoutY + \"px\",\n        left: this.readoutX + \"px\",\n        backgroundColor: \"white\",\n        color: \"black\",\n        padding: \"8px 10px\",\n        fontFamily: \"monospace\",\n        fontSize: \"14px\",\n        border: \"1px solid #888\",\n        borderRadius: \"6px\",\n        cursor: \"move\",\n        zIndex: 1001,\n        width: \"300px\",\n        userSelect: \"none\",\n        boxShadow: \"0 0 6px rgba(0,0,0,0.15)\"\n      };\n    }\n  },\n  methods: {\n    adjustHorizontal() {\n      const delta = this.horizontal - this.lastHorizontal;\n      this.boxX += delta;\n      this.lastHorizontal = this.horizontal;\n    },\n    adjustVertical() {\n      const delta = this.vertical - this.lastVertical;\n      this.boxY -= delta;\n      this.lastVertical = this.vertical;\n    },\n    adjustWidth() {\n      const delta = this.widthDelta - this.lastWidthDelta;\n      this.boxW = Math.max(10, this.boxW + delta);\n      this.lastWidthDelta = this.widthDelta;\n    },\n    adjustHeight() {\n      const delta = this.heightDelta - this.lastHeightDelta;\n      this.boxH = Math.max(10, this.boxH + delta);\n      this.lastHeightDelta = this.heightDelta;\n    },\n    resetSlider(name) {\n      this[name] = 0;\n      if (name === 'horizontal') this.lastHorizontal = 0;\n      if (name === 'vertical') this.lastVertical = 0;\n      if (name === 'widthDelta') this.lastWidthDelta = 0;\n      if (name === 'heightDelta') this.lastHeightDelta = 0;\n    },\n\n    startDrag(e) {\n      if (this.resizing) return;\n      const event = e.touches ? e.touches[0] : e;\n      this.draggingBox = true;\n      this.offsetX = event.clientX - this.boxX;\n      this.offsetY = event.clientY - this.boxY;\n      document.addEventListener(\"mousemove\", this.onBoxDrag);\n      document.addEventListener(\"mouseup\", this.stopDrag);\n      document.addEventListener(\"touchmove\", this.onBoxDrag);\n      document.addEventListener(\"touchend\", this.stopDrag);\n    },\n    onBoxDrag(e) {\n      if (!this.draggingBox) return;\n      const event = e.touches ? e.touches[0] : e;\n      this.boxX = Math.round(event.clientX - this.offsetX);\n      this.boxY = Math.round(event.clientY - this.offsetY);\n    },\n\n    startResize(e) {\n      this.resizing = true;\n      const event = e.touches ? e.touches[0] : e;\n      this.startW = this.boxW;\n      this.startH = this.boxH;\n      this.startMouseX = event.clientX;\n      this.startMouseY = event.clientY;\n      document.addEventListener(\"mousemove\", this.onResize);\n      document.addEventListener(\"mouseup\", this.stopResize);\n      document.addEventListener(\"touchmove\", this.onResize);\n      document.addEventListener(\"touchend\", this.stopResize);\n    },\n    onResize(e) {\n      if (!this.resizing) return;\n      const event = e.touches ? e.touches[0] : e;\n      this.boxW = Math.max(10, Math.round(this.startW + (event.clientX - this.startMouseX)));\n      this.boxH = Math.max(10, Math.round(this.startH + (event.clientY - this.startMouseY)));\n    },\n    stopResize() {\n      this.resizing = false;\n      document.removeEventListener(\"mousemove\", this.onResize);\n      document.removeEventListener(\"mouseup\", this.stopResize);\n      document.removeEventListener(\"touchmove\", this.onResize);\n      document.removeEventListener(\"touchend\", this.stopResize);\n    },\n\n    startReadoutDrag(e) {\n      const event = e.touches ? e.touches[0] : e;\n      this.draggingReadout = true;\n      this.offsetX = event.clientX - this.readoutX;\n      this.offsetY = event.clientY - this.readoutY;\n      document.addEventListener(\"mousemove\", this.onReadoutDrag);\n      document.addEventListener(\"mouseup\", this.stopDrag);\n      document.addEventListener(\"touchmove\", this.onReadoutDrag);\n      document.addEventListener(\"touchend\", this.stopDrag);\n    },\n    onReadoutDrag(e) {\n      if (!this.draggingReadout) return;\n      const event = e.touches ? e.touches[0] : e;\n      this.readoutX = Math.round(event.clientX - this.offsetX);\n      this.readoutY = Math.round(event.clientY - this.offsetY);\n    },\n    stopDrag() {\n      this.draggingBox = false;\n      this.draggingReadout = false;\n      document.removeEventListener(\"mousemove\", this.onBoxDrag);\n      document.removeEventListener(\"mouseup\", this.stopDrag);\n      document.removeEventListener(\"touchmove\", this.onBoxDrag);\n      document.removeEventListener(\"touchend\", this.stopDrag);\n      document.removeEventListener(\"mousemove\", this.onReadoutDrag);\n      document.removeEventListener(\"touchmove\", this.onReadoutDrag);\n    }\n  }\n};\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 490,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31683a5f94497919",
+        "type": "function",
+        "z": "1b607c4bf53459a4",
+        "name": "function 3",
+        "func": "msg.top             = Number(env.get(\"top\"));\nmsg.left            = Number(env.get(\"left\"));\nmsg.width           = Number(env.get(\"width\"));\nmsg.height          = Number(env.get(\"height\"));\n\nmsg.color           = env.get(\"color\");\nmsg.pressedColor    = env.get(\"pressedColor\");\n\nmsg.border          = env.get(\"border\");\nmsg.borderRadius    = Number(env.get(\"borderRadius\"));\n\nmsg.fontFamily      = env.get(\"fontFamily\");\nmsg.fontSize        = Number(env.get(\"fontSize\"));\nmsg.fontWeight      = env.get(\"fontWeight\");\n\nmsg.textColor       = env.get(\"textColor\");\nmsg.textAlign       = env.get(\"textAlign\");\nmsg.alignItems      = env.get(\"alignItems\");\nmsg.justifyContent  = env.get(\"justifyContent\");\n\nmsg.wrapText        = env.get(\"wrapText\") === true || env.get(\"wrapText\") === \"true\";\n\nmsg.label           = env.get(\"label\");\nmsg.payloadOut      = env.get(\"payloadOut\");\nmsg.pressDelay      = env.get(\"pressDelay\");\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "d81c5188f589b9d7"
+            ]
+        ]
+    },
+    {
+        "id": "83a122aba3d48036",
+        "type": "inject",
+        "z": "1b607c4bf53459a4",
+        "name": "Start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "31683a5f94497919"
+            ]
+        ]
+    },
+    {
+        "id": "d81c5188f589b9d7",
+        "type": "ui-template",
+        "z": "1b607c4bf53459a4",
+        "group": "",
+        "page": "${group}",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div :style=\"wrapperStyle\" @click=\"sendMessage\">\n    <div :style=\"buttonStyle\">\n      <span :style=\"labelStyle\">\n        {{ msg.label || \"Button\" }}\n      </span>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return { isPressed: false };\n  },\n  computed: {\n    wrapperStyle() {\n      return {\n        position: \"absolute\",\n        top: (this.msg.top || 0) + \"px\",\n        left: (this.msg.left || 0) + \"px\",\n        width: (this.msg.width || 140) + \"px\",\n        height: (this.msg.height || 40) + \"px\",\n        cursor: \"pointer\"\n      };\n    },\n    buttonStyle() {\n      return {\n        backgroundColor: this.isPressed\n          ? (this.msg.pressedColor || \"#888\")\n          : (this.msg.color || \"#ccc\"),\n        border: this.msg.border || \"none\",\n        borderRadius: (this.msg.borderRadius || 0) + \"px\",\n        width: \"100%\",\n        height: \"100%\",\n        display: \"flex\",\n        alignItems: this.msg.alignItems || \"center\",\n        justifyContent: this.msg.justifyContent || \"center\",\n        overflow: this.msg.wrapText === false ? \"hidden\" : \"visible\",\n        whiteSpace: this.msg.wrapText === false ? \"nowrap\" : \"normal\"\n      };\n    },\n    labelStyle() {\n      return {\n        fontFamily: this.msg.fontFamily || \"Arial\",\n        fontSize: (this.msg.fontSize || 0) + \"px\",\n        fontWeight: this.msg.fontWeight || \"normal\",\n        color: this.msg.textColor || \"black\",\n        textAlign: this.msg.textAlign || \"center\"\n      };\n    }\n  },\n  methods: {\n    sendMessage() {\n      this.isPressed = true;\n      this.send({ payload: this.msg.payloadOut || \"button pressed\" });\n      setTimeout(() => (this.isPressed = false), this.msg.pressDelay);\n    }\n  }\n};\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 520,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "954d6c16eaeafd41",
+        "type": "tcp request",
+        "z": "dae6a1e29997b60c",
+        "name": "User Command",
+        "server": "10.0.0.20",
+        "port": "10001",
+        "out": "char",
+        "ret": "string",
+        "splitc": "\\r",
+        "newline": "",
+        "trim": false,
+        "tls": "",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "b3dddee97903d04a"
+            ]
+        ]
+    },
+    {
+        "id": "d21b3b05416b2dbe",
+        "type": "function",
+        "z": "dae6a1e29997b60c",
+        "name": "Convert String to String",
+        "func": "let cmd = msg.payload;\n\nif (typeof cmd !== \"string\") {\n    cmd = String(cmd);\n}\n\ncmd = cmd.trim();\n\nif (cmd.length === 0) {\n    return null;\n}\n\nmsg.payload = cmd + \"\\r\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 120,
+        "wires": [
+            [
+                "954d6c16eaeafd41",
+                "59578c82d756db12"
+            ]
+        ]
+    },
+    {
+        "id": "b3dddee97903d04a",
+        "type": "debug",
+        "z": "dae6a1e29997b60c",
+        "name": "Send Laser Command Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "59578c82d756db12",
+        "type": "debug",
+        "z": "dae6a1e29997b60c",
+        "name": "Message Sent to Laser",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6a02a9bf4b122d5c",
+        "type": "function",
+        "z": "d7b551338cde4df2",
+        "name": "function 3",
+        "func": "msg.top             = Number(env.get(\"top\"));\nmsg.left            = Number(env.get(\"left\"));\nmsg.width           = Number(env.get(\"width\"));\nmsg.height          = Number(env.get(\"height\"));\n\n//msg.color           = env.get(\"color\"); //from button\n//msg.pressedColor    = env.get(\"pressedColor\"); //from button\n\nmsg.title = env.get(\"title\");\nmsg.titleColor = env.get(\"titleColor\");\nmsg.titleFontSize = Number(env.get(\"titleFontSize\"));\nmsg.titleFontWeight = env.get(\"titleFontWeight\");\n\n\nmsg.backgroundColor = env.get(\"backgroundColor\");\nmsg.textColor = env.get(\"textColor\");\nmsg.border          = env.get(\"border\");\nmsg.borderRadius    = Number(env.get(\"borderRadius\"));\n\nmsg.fontFamily      = env.get(\"fontFamily\");\nmsg.fontSize        = Number(env.get(\"fontSize\"));\nmsg.fontWeight      = env.get(\"fontWeight\");\n\n//msg.textColor       = env.get(\"textColor\");\nmsg.textAlign       = env.get(\"textAlign\");\n//msg.alignItems      = env.get(\"alignItems\");\n//msg.justifyContent  = env.get(\"justifyContent\");\n\nmsg.placeholder = env.get(\"placeholder\");\nmsg.defaultValue = env.get(\"defaultValue\");\nmsg.commandPrefix = env.get(\"commandPrefix\");\n\nmsg.padding = env.get(\"padding\");\nmsg.titleAlign = env.get(\"titleAlign\");\n//msg.wrapText        = env.get(\"wrapText\") === true || env.get(\"wrapText\") === \"true\";\nmsg.titleSpacing = Number(env.get(\"titleSpacing\"));\n//msg.label           = env.get(\"label\");\n//msg.payloadOut      = env.get(\"payloadOut\");\n//msg.pressDelay      = env.get(\"pressDelay\");\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "9ffa3b5817ef57e5"
+            ]
+        ]
+    },
+    {
+        "id": "b32332f5c8271141",
+        "type": "inject",
+        "z": "d7b551338cde4df2",
+        "name": "Start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "6a02a9bf4b122d5c"
+            ]
+        ]
+    },
+    {
+        "id": "9ffa3b5817ef57e5",
+        "type": "ui-template",
+        "z": "d7b551338cde4df2",
+        "group": "",
+        "page": "${group}",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div :style=\"wrapperStyle\">\n    <div :style=\"titleStyle\">\n      {{ msg.title || \"Text Entry\" }}\n    </div>\n\n    <input\n      :style=\"inputStyle\"\n      v-model=\"value\"\n      :placeholder=\"msg.placeholder || ''\"\n      @keyup.enter=\"sendValue\"\n      @blur=\"sendValue\"\n    />\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      value: \"\",\n      lastSent: null\n    };\n  },\n  watch: {\n    msg: {\n      handler(newMsg) {\n        if (newMsg.defaultValue !== undefined && this.value === \"\") {\n          this.value = String(newMsg.defaultValue);\n        }\n      },\n      immediate: true,\n      deep: true\n    }\n  },\n  computed: {\n    wrapperStyle() {\n      return {\n        position: \"absolute\",\n        top: (this.msg.top || 0) + \"px\",\n        left: (this.msg.left || 0) + \"px\",\n        width: (this.msg.width || 180) + \"px\",\n        height: (this.msg.height || 60) + \"px\"\n      };\n    },\n    titleStyle() {\n      return {\n        marginBottom: (this.msg.titleSpacing || 6) + \"px\",\n        color: this.msg.titleColor ? String(this.msg.titleColor) : \"#ffffff\",\n        fontFamily: this.msg.fontFamily || \"Arial\",\n        fontSize: (this.msg.titleFontSize || 14) + \"px\",\n        fontWeight: this.msg.titleFontWeight || \"bold\",\n        textAlign: this.msg.titleAlign || \"left\"\n      };\n    },\n    inputStyle() {\n      return {\n        width: \"100%\",\n        height: \"calc(100% - 22px)\",\n        boxSizing: \"border-box\",\n        backgroundColor: this.msg.backgroundColor || \"white\",\n        color: this.msg.textColor || \"black\",\n        border: this.msg.border || \"1px solid #888\",\n        borderRadius: (this.msg.borderRadius || 0) + \"px\",\n        fontFamily: this.msg.fontFamily || \"Arial\",\n        fontSize: (this.msg.fontSize || 16) + \"px\",\n        fontWeight: this.msg.fontWeight || \"normal\",\n        padding: this.msg.padding || \"0 10px\",\n        textAlign: this.msg.textAlign || \"left\",\n        outline: \"none\"\n      };\n    }\n  },\n  methods: {\n    buildPayload() {\n      let typedValue = String(this.value).trim();\n      let prefix = this.msg.commandPrefix || \"\";\n\n      if (prefix) {\n        return prefix + \" \" + typedValue;\n      }\n\n      return typedValue;\n    },\n    sendValue() {\n      let payload = this.buildPayload();\n\n      if (payload === this.lastSent) {\n        return;\n      }\n\n      this.lastSent = payload;\n\n      this.send({\n        payload: payload,\n        value: this.value,\n        commandPrefix: this.msg.commandPrefix || \"\"\n      });\n    }\n  }\n};\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 520,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6865f0d4488142eb",
+        "type": "function",
+        "z": "24ed30c88c9eb3c0",
+        "name": "function 6",
+        "func": "let cmd = msg.payload;\n\nif (typeof cmd !== \"string\") {\n    cmd = String(cmd);\n}\n\ncmd = cmd.trim();\n\nif (cmd.length === 0) {\n    return null;\n}\n\nmsg.payload = cmd + \"\\r\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 340,
+        "wires": [
+            [
+                "f6f44e47f4010f34"
+            ]
+        ]
+    },
+    {
+        "id": "1316a0adc27fb0b1",
+        "type": "ui-text-input",
+        "z": "24ed30c88c9eb3c0",
+        "group": "d04147ed38ac8e22",
+        "name": "Laser Command",
+        "label": "Laser Command",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "payload",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 510,
+        "y": 260,
+        "wires": [
+            [
+                "6865f0d4488142eb"
+            ]
+        ]
+    },
+    {
+        "id": "f6229e509ac7cd57",
+        "type": "ui-button",
+        "z": "24ed30c88c9eb3c0",
+        "group": "d04147ed38ac8e22",
+        "name": "save",
+        "label": "save",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "save",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 610,
+        "y": 200,
+        "wires": [
+            [
+                "6865f0d4488142eb"
+            ]
+        ]
+    },
+    {
+        "id": "f6f44e47f4010f34",
+        "type": "tcp request",
+        "z": "24ed30c88c9eb3c0",
+        "name": "User Command",
+        "server": "10.0.0.20",
+        "port": "10001",
+        "out": "time",
+        "ret": "string",
+        "splitc": "200",
+        "newline": "",
+        "trim": false,
+        "tls": "",
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "991103aa26325451"
+            ]
+        ]
+    },
+    {
+        "id": "991103aa26325451",
+        "type": "ui-text",
+        "z": "24ed30c88c9eb3c0",
+        "group": "d04147ed38ac8e22",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Laser Response",
+        "label": "Laser Response:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1020,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5694eb2bb970977c",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "3d1a29e6660502a3",
+        "name": "Save to Profile",
+        "label": "Save to Profile",
+        "order": 2,
+        "width": "${ButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "save",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "green",
+        "textColor": "black",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 200,
+        "y": 640,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "2a06673d06bca047",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "382499064ae6a651",
+        "name": "rpow",
+        "label": "read power",
+        "order": 2,
+        "width": "${ButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "rpow",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 230,
+        "y": 680,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "fc8a3d896bf843fa",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "48b6f465d07617e4",
+        "name": "read program",
+        "label": "read program",
+        "order": 3,
+        "width": "${ButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "rprog",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "4e5c1a0defc0e0ac",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "c955c2cb9c8a9507",
+        "name": "rpref",
+        "label": "read preflow",
+        "order": 2,
+        "width": "${ButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "rpref",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 230,
+        "y": 720,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "f822ae92181ebd58",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "944874ad79f6f171",
+        "name": "rpostf",
+        "label": "read postflow",
+        "order": 2,
+        "width": "${ButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "rpostf",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 230,
+        "y": 760,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "1b28d9c5a9f83aa3",
+        "type": "subflow:dae6a1e29997b60c",
+        "z": "b17e4a2898565cbd",
+        "name": "",
+        "x": 820,
+        "y": 480,
+        "wires": [
+            [
+                "8c23d20d804d2dfe"
+            ]
+        ]
+    },
+    {
+        "id": "de5387010ddbdfbd",
+        "type": "function",
+        "z": "b17e4a2898565cbd",
+        "name": "Combine Functioion & Parameter",
+        "func": "let command = msg.topic;      // example: \"SPOW\"\nlet value = msg.payload;      // example: \"500\"\n\nif (!command) {\n    node.warn(\"Missing msg.topic command\");\n    return null;\n}\n\nif (value === undefined || value === null || value === \"\") {\n    msg.payload = command + \"\\r\";\n} else {\n    msg.payload = command + \" \" + String(value).trim() + \"\\r\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 920,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "8c23d20d804d2dfe",
+        "type": "ui-text",
+        "z": "b17e4a2898565cbd",
+        "group": "3d1a29e6660502a3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Laer Response",
+        "label": "Laser Response:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+        "fontSize": 16,
+        "color": "#2e69bd",
+        "wrapText": true,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1060,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c7d8cd152b9cd35f",
+        "type": "ui-text-input",
+        "z": "b17e4a2898565cbd",
+        "group": "382499064ae6a651",
+        "name": "laser power",
+        "label": "set laser power",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "topic": "spow",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 270,
+        "y": 860,
+        "wires": [
+            [
+                "de5387010ddbdfbd"
+            ]
+        ]
+    },
+    {
+        "id": "4d27efdce70f6745",
+        "type": "ui-text-input",
+        "z": "b17e4a2898565cbd",
+        "group": "48b6f465d07617e4",
+        "name": "program number",
+        "label": "program number",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "sprog",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 250,
+        "y": 900,
+        "wires": [
+            [
+                "de5387010ddbdfbd"
+            ]
+        ]
+    },
+    {
+        "id": "3fa8658222c2e499",
+        "type": "ui-text-input",
+        "z": "b17e4a2898565cbd",
+        "group": "944874ad79f6f171",
+        "name": "spostf",
+        "label": "set postflow",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "topic": "spostf",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 290,
+        "y": 940,
+        "wires": [
+            [
+                "de5387010ddbdfbd"
+            ]
+        ]
+    },
+    {
+        "id": "d21f1626713ac6b1",
+        "type": "ui-text-input",
+        "z": "b17e4a2898565cbd",
+        "group": "c955c2cb9c8a9507",
+        "name": "spref",
+        "label": "set preflow",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "topic": "spref",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 290,
+        "y": 980,
+        "wires": [
+            [
+                "de5387010ddbdfbd"
+            ]
+        ]
+    },
+    {
+        "id": "0c2eb4c125c9486e",
+        "type": "ui-dropdown",
+        "z": "b17e4a2898565cbd",
+        "group": "48b6f465d07617e4",
+        "name": "",
+        "label": "Select Program:",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "A1",
+                "value": "sprog a 1",
+                "type": "str"
+            },
+            {
+                "label": "A3",
+                "value": "sprog a 2",
+                "type": "str"
+            },
+            {
+                "label": "A3",
+                "value": "sprog a 3",
+                "type": "str"
+            },
+            {
+                "label": "A4",
+                "value": "sprog a 4",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "ui_update.options",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "eb12b657faf07528",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "93a3c39755b421d4",
+        "name": "Read General Status",
+        "label": "Read General Status",
+        "order": 1,
+        "width": "${ManagementButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "STG",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "7a037c9389749587",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "93a3c39755b421d4",
+        "name": "Read Alarms",
+        "label": "Read Alarms",
+        "order": 3,
+        "width": "${ManagementButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "sta",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "91b85d28881595cb",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "93a3c39755b421d4",
+        "name": "Read Warnings",
+        "label": "Read Warnings",
+        "order": 2,
+        "width": "${ManagementButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "stw",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 420,
+        "y": 60,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "3e721d73d655b018",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "93a3c39755b421d4",
+        "name": "Clear Errors",
+        "label": "Clear Errors",
+        "order": 4,
+        "width": "${ManagementButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "rerr",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "40aaffffddbe7dd3",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "70f9feebd4781be7",
+        "name": "read laser Mode",
+        "label": "Read laser Mode",
+        "order": 2,
+        "width": "${ButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "rlmod",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "286793b4a714816c",
+        "type": "ui-text-input",
+        "z": "b17e4a2898565cbd",
+        "group": "70f9feebd4781be7",
+        "name": "set laser mode",
+        "label": "set laser mode",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "topic": "slmod",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 260,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a64dce800a69e4e0",
+        "type": "ui-button",
+        "z": "b17e4a2898565cbd",
+        "group": "93a3c39755b421d4",
+        "name": "Reset Program",
+        "label": "Reset Program",
+        "order": 5,
+        "width": "${ManagementButtonWidth}",
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "rest",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 420,
+        "y": 220,
+        "wires": [
+            [
+                "1b28d9c5a9f83aa3"
+            ]
+        ]
+    },
+    {
+        "id": "8c44e6f23ad8dfc9",
+        "type": "subflow:d7b551338cde4df2",
+        "z": "7cb073363331ce02",
+        "d": true,
+        "name": "",
+        "env": [
+            {
+                "name": "group",
+                "value": "70dfd61515e45c2a",
+                "type": "conf-type"
+            },
+            {
+                "name": "title",
+                "value": "Set Power",
+                "type": "str"
+            },
+            {
+                "name": "commandPrefix",
+                "value": "spow",
+                "type": "str"
+            },
+            {
+                "name": "left",
+                "value": "173",
+                "type": "str"
+            },
+            {
+                "name": "top",
+                "value": "97",
+                "type": "str"
+            },
+            {
+                "name": "width",
+                "value": "70",
+                "type": "str"
+            },
+            {
+                "name": "titleColor",
+                "value": "black",
+                "type": "str"
+            },
+            {
+                "name": "textColor",
+                "value": "black",
+                "type": "str"
+            },
+            {
+                "name": "padding",
+                "value": "0 3px",
+                "type": "str"
+            },
+            {
+                "name": "textAlign",
+                "value": "center",
+                "type": "str"
+            },
+            {
+                "name": "fontSize",
+                "value": "20",
+                "type": "str"
+            },
+            {
+                "name": "titleSpacing",
+                "value": "-3",
+                "type": "str"
+            }
+        ],
+        "x": 180,
+        "y": 580,
+        "wires": [
+            [
+                "8659e65bf334bec0"
+            ]
+        ]
+    },
+    {
+        "id": "8659e65bf334bec0",
+        "type": "debug",
+        "z": "7cb073363331ce02",
+        "name": "combined2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "12d3cd8883699e79",
+        "type": "subflow:24ed30c88c9eb3c0",
+        "z": "7cb073363331ce02",
+        "name": "",
+        "x": 290,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "19b80b79af4845c3",
+        "type": "subflow:b17e4a2898565cbd",
+        "z": "7cb073363331ce02",
+        "name": "",
+        "env": [
+            {
+                "name": "ManagementButtonWidth",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "name": "ButtonWidth",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "x": 250,
+        "y": 340,
+        "wires": []
+    }
+]
